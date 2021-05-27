@@ -1,0 +1,8 @@
+name: TipsML
+
+entry_points:
+  main:
+    parameters:
+      max_depth: {type: float, default: 4}
+      data_file: path
+    command: "python3 train.py {max_depth} {data_file}"
